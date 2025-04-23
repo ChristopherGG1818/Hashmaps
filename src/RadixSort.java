@@ -60,7 +60,7 @@ public class RadixSort {
         List<Character> sortedChars = new ArrayList<>(count.keySet());
         sortedChars.sort((a, b) -> {
             if (Character.toLowerCase(a) == Character.toLowerCase(b)) {
-                return Character.isUpperCase(a) ? -1 : 1;
+                return Character.isUpperCase(a)  -1 : 1;
             }
             return Character.toLowerCase(a) - Character.toLowerCase(b);
         });
